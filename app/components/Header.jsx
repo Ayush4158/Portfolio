@@ -1,13 +1,15 @@
-import React from "react";
-import { Menu } from "lucide-react";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react"; // X for close icon
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const navItems = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Services", id: "service" },
     { name: "Projects", id: "projects" },
-    { name: "Reviews", id: "reviews" }, // Changed
+    { name: "Reviews", id: "reviews" },
   ];
 
   return (
@@ -18,7 +20,7 @@ const Header = () => {
           LOGO
         </div>
 
-        {/* Nav Items */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-x-10">
           {navItems.map((item) => (
             <a
@@ -31,7 +33,7 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Contact Button */}
+        {/* Desktop Contact Button */}
         <div className="hidden md:block">
           <a
             href="#contact"
@@ -43,9 +45,43 @@ const Header = () => {
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
-          <Menu className="h-7 w-7 text-gray-300 cursor-pointer hover:text-indigo-400 transition-colors" />
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? (
+              <X className="h-7 w-7 text-gray-300 cursor-pointer hover:text-indigo-400 transition-colors" />
+            ) : (
+              <Menu className="h-7 w-7 text-gray-300 cursor-pointer hover:text-indigo-400 transition-colors" />
+            )}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden bg-black/90 backdrop-blur-xl border-t border-white/10">
+          <ul className="flex flex-col gap-4 px-6 py-4">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className="block text-gray-300 font-medium text-lg hover:text-white transition-colors"
+                  onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a
+                href="#contact"
+                className="block mt-2 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 px-5 py-2 text-center text-white font-semibold shadow-md hover:shadow-[0_0_20px_rgba(236,72,153,0.8)]"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
