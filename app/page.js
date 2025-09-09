@@ -210,24 +210,24 @@ export default function Home() {
         </div>
 
         {/* About */}
-        <section id="about" className="mx-auto max-w-full px-4 py-10 bg-black">
+        <section id="about" className="mx-auto max-w-full bg-black">
           <About />
         </section>
 
         {/* Service */}
-        <section id="service" className="mx-auto max-w-full px-4 bg-black">
+        <section id="service" className="mx-auto max-w-full bg-black">
           <Service />
         </section>
 
         <TrustBadge />
 
         {/* Project */}
-        <section id="projects" className="mx-auto max-w-full px-4 bg-black">
+        <section id="projects" className="mx-auto max-w-full bg-black">
           <Project />
         </section>
 
         {/* Contact */}
-        <section id="contact" className="mx-auto max-w-full px-4 py-10 bg-black">
+        <section id="contact" className="mx-auto max-w-full bg-black">
           <ContactSection />
         </section>
       </main>
