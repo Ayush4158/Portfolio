@@ -41,7 +41,7 @@ export default function ContactSection() {
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-neutral-900 rounded-2xl p-8 shadow-lg"
+          className="bg-neutral-900 rounded-2xl p-4 shadow-lg"
         >
           <form className="space-y-6">
             <div>
