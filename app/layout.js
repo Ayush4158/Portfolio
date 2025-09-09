@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark` }
       >
         {/* Sticky header */}
         <div className="sticky top-0 left-0 w-full z-50 overflow-hidden bg-background shadow-md">
