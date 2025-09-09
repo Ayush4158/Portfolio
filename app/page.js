@@ -66,10 +66,10 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground dark">
+    <div className="min-h-screen bg-background text-foreground ">
       <main>
         {/* Hero */}
-        <div className="relative flex flex-col w-full items-center justify-center bg-white dark:bg-black">
+        <div className="relative flex flex-col w-full items-center justify-center bg-black">
           {/* Grid background */}
           <div
             className={cn(
