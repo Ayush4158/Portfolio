@@ -66,7 +66,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground dark">
       <main>
         {/* Hero */}
         <div className="relative flex flex-col w-full items-center justify-center bg-white dark:bg-black">
