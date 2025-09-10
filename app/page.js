@@ -18,6 +18,8 @@ import Service from "./components/Service";
 import Project from "./components/Project";
 import ContactSection from "./components/Contact";
 import TrustBadge from "./components/TrustBadge";
+import Review from "./components/Review";
+import { Testimonials } from "./components/Testimonials";
 
 function Badge({ icon: Icon, title, desc }) {
   return (
@@ -227,8 +229,18 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="mx-auto max-w-full bg-black">
+        <section id="contact" className="mx-auto max-w-full  bg-black">
           <ContactSection />
+        </section>
+
+        {/* Review */}
+        <section id="review" className="mx-auto max-w-full  bg-black">
+          <Review />
+        </section>
+
+        {/* Review */}
+        <section id="review" className="mx-auto max-w-full  bg-black">
+          <Testimonials />
         </section>
       </main>
     </div>
