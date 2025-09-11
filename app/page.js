@@ -100,10 +100,9 @@ export default function Home() {
                   </h1>
 
                   <p className="mt-5 text-white/70 text-base sm:text-lg leading-relaxed">
-                    I craft Shopify stores, React dashboards, and Next.js AI
-                    apps. With 1 year of hands-on experience across Shopify, Wix,
-                    React, Next.js, HTML, CSS, and JavaScript — I turn ideas into
-                    modern, scalable solutions.
+                    I specialize in crafting Shopify stores, React dashboards, and Next.js AI applications. With over a year 
+                    of hands-on experience in Shopify, Wix, React, Next.js, HTML, CSS, and JavaScript, I transform ideas 
+                    into modern, scalable, and user-friendly digital solutions.
                   </p>
 
                   <div className="mt-7 flex flex-wrap items-center gap-4">
@@ -123,7 +122,7 @@ export default function Home() {
                 </div>
 
                 {/* Achievements / Highlights Card */}
-                <div className="mx-auto mt-8 w-full max-w-sm overflow-hidden rounded-2xl border border-white/30 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all hover:shadow-[0_0_25px_rgba(99,102,241,0.6)] hover:-translate-y-1 md:mt-0">
+                <div className="mx-auto mt-8 w-full max-w-md overflow-hidden rounded-2xl border border-white/30 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all hover:shadow-[0_0_25px_rgba(99,102,241,0.6)] hover:-translate-y-1 md:mt-0">
                   <div className="flex items-center gap-3 text-base text-white/90">
                     <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-white/10">
                       <BadgeCheck className="h-5 w-5" />
@@ -144,27 +143,27 @@ export default function Home() {
                         icon: (
                           <ShoppingBag className="h-5 w-5 text-emerald-500" />
                         ),
-                        title: "2 Projects",
-                        desc: "Delivered to clients",
+                        title: "10+ Projects",
+                        desc: "Successfully delivered across web & AI technologies",
                       },
                       {
                         icon: (
                           <TrendingUp className="h-5 w-5 text-sky-500" />
                         ),
-                        title: "10+ Projects",
-                        desc: "Completed in agency",
+                        title: "Internship Experience",
+                        desc: "Worked with a renowned company, gaining industry-level exposure",
                       },
                       {
                         icon: <Clock className="h-5 w-5 text-indigo-500" />,
-                        title: "100% Delivery",
-                        desc: "Always on time",
+                        title: "AI Expertise",
+                        desc: "Proficient in building AI-powered applications & integrations",
                       },
                       {
                         icon: (
                           <Briefcase className="h-5 w-5 text-amber-500" />
                         ),
-                        title: "Agency Exp.",
-                        desc: "Worked as Web Dev",
+                        title: "100% Delivery",
+                        desc: "Committed to on-time and reliable project completion",
                       },
                     ].map((item, i) => (
                       <div

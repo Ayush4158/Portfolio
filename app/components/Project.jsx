@@ -7,41 +7,30 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Shopify Store",
-    desc: "Custom Shopify storefront built for high conversions and smooth user experience.",
-    link: "https://example.com/shopify",
-    img: "https://source.unsplash.com/600x400/?ecommerce,shopify",
+    desc: "I built and optimized a complete Shopify storefront for a client, focusing on high performance, mobile responsiveness, and smooth user experience. The store was customized with advanced features to increase conversions, enhance product presentation, and integrate seamless checkout flows. Along with design, I ensured speed optimization and SEO-friendly structure for better reach and sales.",
+    link: "https://itrani.com/",
+    img: "/The-Best-Shopify-Store-Examples-for-2022.png",
   },
   {
     title: "Wix Website",
-    desc: "A modern Wix-based website for a creative agency with animations and CMS features.",
-    link: "https://example.com/wix",
-    img: "https://source.unsplash.com/600x400/?website,design",
+    desc: "Developed a modern and professional Wix website for our own company with the goal of creating a strong online presence when I wanted to onboard employees. The website includes smooth animations, responsive layouts, and CMS-powered sections for easy content management. It reflects brand identity while being simple to update and maintain, making it ideal for a growing business setup.",
+    link: "https://www.breakthecode.in/",
+    img: "/wix.jpeg",
   },
   {
     title: "React Dashboard",
-    desc: "Interactive admin panel with data visualization, charts, and responsive layout.",
-    link: "https://example.com/react-dashboard",
-    img: "https://source.unsplash.com/600x400/?dashboard,react",
+    desc: "A personal full-stack project where I built an interactive React-based admin dashboard integrated with MongoDB and Express server. The project demonstrates complete CRUD operations such as adding, updating, deleting, and viewing records. It also includes data visualization features, charts, and a responsive layout. This project helped me strengthen my skills in React, backend APIs, and database connectivity.",
+    link: "https://school-board-alpha.vercel.app/",
+    img: "/og-home.png",
   },
   {
     title: "Next.js App",
-    desc: "SEO-optimized Next.js app with server-side rendering and API integration.",
-    link: "https://example.com/nextjs",
-    img: "https://source.unsplash.com/600x400/?coding,nextjs",
-  },
-  {
-    title: "Portfolio Website",
-    desc: "Personal developer portfolio with animations, blog integration, and projects.",
-    link: "https://example.com/portfolio",
-    img: "https://source.unsplash.com/600x400/?portfolio,developer",
-  },
-  {
-    title: "AI-Powered Tool",
-    desc: "Web app enhanced with AI chat features, code generation, and content automation.",
-    link: "https://example.com/ai-tool",
-    img: "https://source.unsplash.com/600x400/?artificial,intelligence",
+    desc: "Created a powerful Next.js application integrated with AI to handle user queries in real-time. The app leverages server-side rendering for SEO optimization and includes secure authentication using NextAuth. Apart from answering queries with AI, the project also demonstrates API integration, dynamic routing, and a user-friendly interface. This was a challenging project where I combined frontend, backend, and AI to deliver a complete solution.",
+    link: "https://intellio-ai-eight.vercel.app/",
+    img: "/nextjs.jpeg",
   },
 ];
+
 
 const Project = () => {
   const [selected, setSelected] = useState(null);

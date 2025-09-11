@@ -6,35 +6,36 @@ import { Store, Layout, Code2, Rocket, Settings, Globe } from "lucide-react";
 const services = [
   {
     title: "Shopify Development",
-    desc: "Custom Shopify themes, optimized storefronts, and seamless integrations to help your business sell more effectively online.",
+    desc: "Custom Shopify themes, scalable storefronts, and seamless integrations designed to boost sales and elevate your eCommerce experience.",
     icon: <Store className="h-10 w-10 text-indigo-400" />,
   },
   {
     title: "Wix Websites",
-    desc: "Modern, responsive, and professional Wix websites tailored to your brand with smooth animations and easy management.",
+    desc: "Professional, responsive Wix websites with smooth animations, tailored designs, and easy-to-manage features for your brand.",
     icon: <Layout className="h-10 w-10 text-pink-400" />,
   },
   {
     title: "React Dashboards",
-    desc: "Interactive dashboards, admin panels, and user-friendly web apps built using React for maximum performance.",
+    desc: "Dynamic dashboards and admin panels built with React, offering lightning-fast performance and a user-friendly experience.",
     icon: <Code2 className="h-10 w-10 text-green-400" />,
   },
   {
     title: "Next.js Applications",
-    desc: "High-performance, SEO-optimized Next.js applications with server-side rendering and modern workflows.",
+    desc: "SEO-friendly, high-performance Next.js apps with server-side rendering and modern workflows for maximum efficiency.",
     icon: <Rocket className="h-10 w-10 text-blue-400" />,
   },
   {
     title: "Web Management",
-    desc: "Complete website management including updates, optimizations, content handling, and security monitoring.",
+    desc: "End-to-end website management including updates, performance optimization, content handling, and security monitoring.",
     icon: <Settings className="h-10 w-10 text-yellow-400" />,
   },
   {
     title: "AI-Powered Features",
-    desc: "Enhancing websites with AI tools like chat assistants, content generation, and workflow automation.",
+    desc: "Integrating AI tools like smart chat assistants, content automation, and intelligent workflows to enhance user engagement.",
     icon: <Globe className="h-10 w-10 text-purple-400" />,
   },
 ];
+
 
 const Service = () => {
   return (
