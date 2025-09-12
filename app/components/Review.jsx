@@ -51,7 +51,7 @@ export default function Review() {
   };
 
   return (
-    <section className="min-h-screen bg-black text-white flex justify-center px-6 pt-10">
+    <section className=" bg-black text-white flex justify-center px-6 pt-10 pb-10">
       <div className="max-w-6xl w-full space-y-5">
         {/* Header */}
         <motion.h2

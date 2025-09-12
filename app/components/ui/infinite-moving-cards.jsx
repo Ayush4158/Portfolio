@@ -61,14 +61,14 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-2", // 🔹 reduced vertical padding
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-2",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -76,23 +76,23 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-6 py-4 md:w-[450px] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
+            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-neutral-700 bg-[linear-gradient(180deg,#27272a,#18181b)] px-6 py-4 md:w-[450px]"
           >
             <blockquote>
               <div className="relative z-20 flex flex-row items-center gap-4">
-                {/* 👇 Profile Image from Cloudinary */}
+                {/* 👇 Profile Image */}
                 {item.image && (
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="h-20 w-20 rounded-full object-cover border border-zinc-300 dark:border-zinc-700"
+                    className="h-20 w-20 rounded-full object-cover border border-neutral-700"
                   />
                 )}
                 <span className="flex flex-col gap-0.5">
-                  <span className="text-xl font-bold text-neutral-800 dark:text-gray-100">
+                  <span className="text-xl font-bold text-gray-100">
                     {item.name}
                   </span>
-                  <span className="relative z-20 text-sm leading-snug font-normal text-neutral-800 dark:text-gray-100">
+                  <span className="relative z-20 text-sm leading-snug font-normal text-gray-100">
                     {item.message}
                   </span>
                 </span>

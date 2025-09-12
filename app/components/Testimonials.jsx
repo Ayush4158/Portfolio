@@ -11,16 +11,16 @@ export function Testimonials() {
       try {
         const res = await fetch("/api/review");
         const data = await res.json();
-        console.log(data)
+        console.log(data);
 
         if (res.ok) {
-          // Map MongoDB fields into InfiniteMovingCards format
+          // ✅ Format data for InfiniteMovingCards
           const formatted = data.map((r) => ({
-            quote: r.message,
+            message: r.message, // ✅ fixed: InfiniteMovingCards expects "message", not "quote"
             name: r.name,
-            image: r.file || null, // Cloudinary file URL if available
+            image: r.file || null, // Cloudinary file URL
           }));
-          setTestimonials(data);
+          setTestimonials(formatted);
         } else {
           console.error("Error fetching reviews:", data.error);
         }
@@ -33,15 +33,25 @@ export function Testimonials() {
   }, []);
 
   return (
-    <div className="rounded-md flex flex-col antialiased bg-black items-center justify-center relative overflow-hidden">
-                <h2 className="text-4xl md:text-5xl font-extrabold mb-14  bg-gradient-to-r from-indigo-400 to-indigo-200 bg-clip-text text-transparent">
-            What Our Client Say's About Us
-          </h2>
+    <section className="flex flex-col items-center justify-center w-full px-4 sm:px-6 lg:px-10 py-10 sm:py-16 bg-black relative overflow-hidden">
+      {/* Section Heading */}
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 sm:mb-14 bg-gradient-to-r from-indigo-400 to-indigo-200 bg-clip-text text-transparent text-center leading-tight max-w-xl sm:max-w-3xl">
+        What Our Clients Say About Us
+      </h2>
+
+      {/* Testimonials */}
       {testimonials.length > 0 ? (
-        <InfiniteMovingCards items={testimonials} direction="right" speed="fast" />
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="fast"
+          className="w-full"
+        />
       ) : (
-        <p className="text-gray-400 py-10">No reviews yet...</p>
+        <p className="text-gray-400 text-center text-sm sm:text-base py-6 sm:py-10">
+          No reviews yet...
+        </p>
       )}
-    </div>
+    </section>
   );
 }

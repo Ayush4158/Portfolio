@@ -1,38 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Store, Layout, Code2, Rocket, Settings, Globe } from "lucide-react";
+import { Store, Layout, Code2, Settings, Share2, Video } from "lucide-react";
 
 const services = [
   {
-    title: "Shopify Development",
-    desc: "Custom Shopify themes, scalable storefronts, and seamless integrations designed to boost sales and elevate your eCommerce experience.",
+    title: "Shopify Development & Management",
+    desc: "Custom Shopify stores with tailored themes, optimized checkout flows, and ongoing store management to boost sales and ensure smooth operations.",
     icon: <Store className="h-10 w-10 text-indigo-400" />,
   },
   {
-    title: "Wix Websites",
-    desc: "Professional, responsive Wix websites with smooth animations, tailored designs, and easy-to-manage features for your brand.",
+    title: "Wix Website Development & Management",
+    desc: "Professional, responsive Wix websites with stunning designs, smooth animations, and complete website management for effortless updates.",
     icon: <Layout className="h-10 w-10 text-pink-400" />,
   },
   {
-    title: "React Dashboards",
-    desc: "Dynamic dashboards and admin panels built with React, offering lightning-fast performance and a user-friendly experience.",
+    title: "Website Development",
+    desc: "Modern, responsive websites built with clean code, fast load times, and an emphasis on user experience — perfect for businesses and startups.",
     icon: <Code2 className="h-10 w-10 text-green-400" />,
   },
   {
-    title: "Next.js Applications",
-    desc: "SEO-friendly, high-performance Next.js apps with server-side rendering and modern workflows for maximum efficiency.",
-    icon: <Rocket className="h-10 w-10 text-blue-400" />,
-  },
-  {
-    title: "Web Management",
-    desc: "End-to-end website management including updates, performance optimization, content handling, and security monitoring.",
+    title: "Website Management",
+    desc: "End-to-end website care including regular updates, bug fixes, performance optimization, content management, and security monitoring.",
     icon: <Settings className="h-10 w-10 text-yellow-400" />,
   },
   {
-    title: "AI-Powered Features",
-    desc: "Integrating AI tools like smart chat assistants, content automation, and intelligent workflows to enhance user engagement.",
-    icon: <Globe className="h-10 w-10 text-purple-400" />,
+    title: "Content Creation",
+    desc: "Creative assets that elevate your brand — banners, promo videos, reels, and other engaging content to boost your online presence.",
+    icon: <Video className="h-10 w-10 text-orange-400" />, // 🎥 Perfect for videos/reels/banners
+  },
+  {
+    title: "Social Media Management",
+    desc: "Strategic social media management — from content planning and posting to engagement and growth strategies across all major platforms.",
+    icon: <Share2 className="h-10 w-10 text-purple-400" />, // 🔗 Great for social sharing & growth
   },
 ];
 
